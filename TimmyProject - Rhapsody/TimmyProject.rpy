@@ -3,7 +3,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 	- _id = GUID 87f778f8-58a2-45c7-a5d4-71037979c3a3;
 	- _myState = 8192;
 	- _name = "TimmyProject";
-	- _modifiedTimeWeak = 12.11.2017::10:54:41;
+	- _modifiedTimeWeak = 12.11.2017::11:14:13;
 	- _lastID = 1;
 	- _UserColors = { IRPYRawContainer 
 		- size = 16;
@@ -214,7 +214,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 				}
 			}
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "12.11.2017::10:58:21";
+			- _lastModifiedTime = "12.11.2017::11:17:51";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID cff04aab-6100-458e-949d-74d6c0caa970;
 				- m_type = 0;
@@ -523,7 +523,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 								- value = 
 								{ IHandle 
 									- _m2Class = "IAttribute";
-									- _filename = "Default.sbs";
+									- _filename = "";
 									- _subsystem = "Default";
 									- _class = "RealPersonn";
 									- _name = "address";
@@ -531,7 +531,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 								}
 								{ IHandle 
 									- _m2Class = "IAttribute";
-									- _filename = "Default.sbs";
+									- _filename = "";
 									- _subsystem = "Default";
 									- _class = "RealPersonn";
 									- _name = "email";
@@ -539,7 +539,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 								}
 								{ IHandle 
 									- _m2Class = "IAttribute";
-									- _filename = "Default.sbs";
+									- _filename = "";
 									- _subsystem = "Default";
 									- _class = "RealPersonn";
 									- _name = "name";
@@ -547,7 +547,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 								}
 								{ IHandle 
 									- _m2Class = "IAttribute";
-									- _filename = "Default.sbs";
+									- _filename = "";
 									- _subsystem = "Default";
 									- _class = "RealPersonn";
 									- _name = "phoneNumber";
@@ -683,7 +683,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 								- value = 
 								{ IHandle 
 									- _m2Class = "IAttribute";
-									- _filename = "Default.sbs";
+									- _filename = "";
 									- _subsystem = "Default";
 									- _class = "Corporation";
 									- _name = "numeroSiren";
@@ -691,7 +691,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 								}
 								{ IHandle 
 									- _m2Class = "IAttribute";
-									- _filename = "Default.sbs";
+									- _filename = "";
 									- _subsystem = "Default";
 									- _class = "Corporation";
 									- _name = "legalForm";
@@ -1317,11 +1317,11 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 							- m_bShowInherited = 0;
 							- m_bOrdered = 1;
 							- Items = { IRPYRawContainer 
-								- size = 2;
+								- size = 3;
 								- value = 
 								{ IHandle 
 									- _m2Class = "IAttribute";
-									- _filename = "";
+									- _filename = "Default.sbs";
 									- _subsystem = "Default";
 									- _class = "Property";
 									- _name = "adress";
@@ -1329,14 +1329,23 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 								}
 								{ IHandle 
 									- _m2Class = "IAttribute";
-									- _filename = "";
+									- _filename = "Default.sbs";
 									- _subsystem = "Default";
 									- _class = "Property";
 									- _name = "orientation";
 									- _id = GUID 8e4fbe91-8409-48f3-8c29-dd41e761d89e;
 								}
+								{ IHandle 
+									- _m2Class = "IAttribute";
+									- _filename = "Default.sbs";
+									- _subsystem = "Default";
+									- _class = "Property";
+									- _name = "areaProperty";
+									- _id = GUID 1ba76a83-485a-45a9-addf-ac5bc1c85c57;
+								}
 							}
-							- _itemValueOfFontPropertiesMapCount = 2;
+							- _itemValueOfFontPropertiesMapCount = 3;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
@@ -4528,7 +4537,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 							- m_name = "Attribute";
 							- m_displayOption = Explicit;
 							- m_bShowInherited = 0;
-							- m_bOrdered = 0;
+							- m_bOrdered = 1;
 							- Items = { IRPYRawContainer 
 								- size = 0;
 							}

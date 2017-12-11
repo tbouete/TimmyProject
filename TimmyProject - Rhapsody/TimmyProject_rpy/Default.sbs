@@ -3,9 +3,9 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 	- _id = GUID 76ba9155-4b44-41ed-a9e2-01909e9dfb81;
 	- _myState = 8192;
 	- _name = "Default";
-	- _modifiedTimeWeak = 12.11.2017::10:58:15;
+	- _modifiedTimeWeak = 12.11.2017::11:13:52;
 	- _lastID = 19;
-	- weakCGTime = 12.11.2017::10:58:15;
+	- weakCGTime = 12.11.2017::11:13:52;
 	- strongCGTime = 12.11.2017::10:54:29;
 	- AssociationElements = { IRPYRawContainer 
 		- size = 13;
@@ -307,8 +307,8 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 			- _id = GUID 028ff9e1-ae1f-4b7d-ab67-d4b0613f92f1;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- _modifiedTimeWeak = 12.11.2017::10:54:29;
-			- weakCGTime = 12.11.2017::10:54:29;
+			- _modifiedTimeWeak = 12.11.2017::10:58:15;
+			- weakCGTime = 12.11.2017::10:58:15;
 			- strongCGTime = 12.11.2017::10:54:29;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -332,9 +332,6 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 			- _lastID = 8;
 			- weakCGTime = 12.11.2017::10:59:22;
 			- strongCGTime = 12.11.2017::10:54:29;
-			- Operations = { IRPYRawContainer 
-				- size = 0;
-			}
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
@@ -1017,7 +1014,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 			- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
 			- _myState = 8192;
 			- _name = "Property";
-			- _modifiedTimeWeak = 12.11.2017::10:57:8;
+			- _modifiedTimeWeak = 12.11.2017::11:13:57;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "";
@@ -1026,11 +1023,11 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 				- _name = "Class Diagram";
 				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
 			}
-			- _lastID = 6;
-			- weakCGTime = 12.11.2017::10:57:8;
+			- _lastID = 7;
+			- weakCGTime = 12.11.2017::11:13:57;
 			- strongCGTime = 12.11.2017::10:54:29;
 			- Attrs = { IRPYRawContainer 
-				- size = 2;
+				- size = 3;
 				- value = 
 				{ IAttribute 
 					- _id = GUID 5ab4e641-ae7a-476e-abad-e3f3eeafd5d1;
@@ -1062,6 +1059,25 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 					}
 					- _isOrdered = 0;
 					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 1ba76a83-485a-45a9-addf-ac5bc1c85c57;
+					- _myState = 8192;
+					- _name = "areaProperty";
+					- _modifiedTimeWeak = 12.11.2017::11:13:57;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
 					- _static = 0;
 					- _isReference = 0;
 					- _isConstant = 0;
@@ -2220,7 +2236,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 			- _id = GUID 3aab281a-3985-4f42-b309-528fa426d71f;
 			- _myState = 8192;
 			- _name = "Orientation";
-			- _modifiedTimeWeak = 12.11.2017::10:56:56;
+			- _modifiedTimeWeak = 12.11.2017::11:18:9;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "";
@@ -2229,7 +2245,8 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 				- _name = "Class Diagram";
 				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
 			}
-			- weakCGTime = 12.11.2017::10:56:56;
+			- _lastID = 2;
+			- weakCGTime = 12.11.2017::11:18:9;
 			- strongCGTime = 12.11.2017::10:56:56;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 

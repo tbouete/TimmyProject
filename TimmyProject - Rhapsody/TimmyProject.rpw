@@ -30,14 +30,14 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 				- _name = "Class Diagram";
 				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
 			}
-			- _UpLeft = -28 0 ;
-			- _DownRight = 1300 822 ;
+			- _UpLeft = -12 0 ;
+			- _DownRight = 1316 822 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 1;
 		}
 	}
-	- _fullName = "C:\\Users\\Titouan\\Desktop\\Miash\\TimmyProject\\TimmyProject";
+	- _fullName = "C:\\Users\\Titouan\\Documents\\GitHub\\TimmyProject\\TimmyProject - Rhapsody\\TimmyProject";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}
