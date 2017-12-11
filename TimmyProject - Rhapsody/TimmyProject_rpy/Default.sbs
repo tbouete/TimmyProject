@@ -3,9 +3,9 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 	- _id = GUID 76ba9155-4b44-41ed-a9e2-01909e9dfb81;
 	- _myState = 8192;
 	- _name = "Default";
-	- _modifiedTimeWeak = 12.11.2017::11:13:52;
+	- _modifiedTimeWeak = 12.11.2017::11:23:42;
 	- _lastID = 19;
-	- weakCGTime = 12.11.2017::11:13:52;
+	- weakCGTime = 12.11.2017::11:23:42;
 	- strongCGTime = 12.11.2017::10:54:29;
 	- AssociationElements = { IRPYRawContainer 
 		- size = 13;
@@ -904,7 +904,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 			- _id = GUID 881e7ce3-0eec-42dc-ad39-1a33c3624586;
 			- _myState = 8192;
 			- _name = "Plot";
-			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- _modifiedTimeWeak = 12.11.2017::11:23:51;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "";
@@ -913,8 +913,32 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 				- _name = "Class Diagram";
 				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
 			}
-			- weakCGTime = 12.11.2017::10:54:29;
+			- _lastID = 1;
+			- weakCGTime = 12.11.2017::11:23:51;
 			- strongCGTime = 12.11.2017::10:54:29;
+			- Attrs = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 766bf99b-8c79-425b-bf5b-945499c18434;
+					- _myState = 8192;
+					- _name = "areaPlot";
+					- _modifiedTimeWeak = 12.11.2017::11:23:51;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+			}
 			- Inheritances = { IRPYRawContainer 
 				- size = 1;
 				- value = 

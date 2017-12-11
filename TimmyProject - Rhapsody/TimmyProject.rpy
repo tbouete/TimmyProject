@@ -3,7 +3,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 	- _id = GUID 87f778f8-58a2-45c7-a5d4-71037979c3a3;
 	- _myState = 8192;
 	- _name = "TimmyProject";
-	- _modifiedTimeWeak = 12.11.2017::11:14:13;
+	- _modifiedTimeWeak = 12.11.2017::11:24:3;
 	- _lastID = 1;
 	- _UserColors = { IRPYRawContainer 
 		- size = 16;
@@ -214,7 +214,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 				}
 			}
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "12.11.2017::11:17:51";
+			- _lastModifiedTime = "12.11.2017::11:24:4";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID cff04aab-6100-458e-949d-74d6c0caa970;
 				- m_type = 0;
@@ -987,9 +987,18 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 							- m_name = "Attribute";
 							- m_displayOption = Explicit;
 							- m_bShowInherited = 0;
-							- m_bOrdered = 0;
+							- m_bOrdered = 1;
 							- Items = { IRPYRawContainer 
-								- size = 0;
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IAttribute";
+									- _filename = "Default.sbs";
+									- _subsystem = "Default";
+									- _class = "Plot";
+									- _name = "areaPlot";
+									- _id = GUID 766bf99b-8c79-425b-bf5b-945499c18434;
+								}
 							}
 						}
 						{ CGICompartment 
