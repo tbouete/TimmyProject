@@ -1,0 +1,2264 @@
+I-Logix-RPY-Archive version 8.12.0 C++ 9728113
+{ ISubsystem 
+	- _id = GUID 76ba9155-4b44-41ed-a9e2-01909e9dfb81;
+	- _myState = 8192;
+	- _name = "Default";
+	- _modifiedTimeWeak = 12.11.2017::10:58:15;
+	- _lastID = 19;
+	- weakCGTime = 12.11.2017::10:58:15;
+	- strongCGTime = 12.11.2017::10:54:29;
+	- AssociationElements = { IRPYRawContainer 
+		- size = 13;
+		- value = 
+		{ IAssociationClass 
+			- _id = GUID f88f356a-1550-4d38-890f-00b245f4e93b;
+			- _myState = 10240;
+			- _name = "listBiens_vendeur";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID e068812f-f9ad-40bb-87cd-892e2cd06049;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 18571fea-1ef0-4c60-930f-701d60c97357;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID 5d667452-43e0-479b-856d-1a3c3a49c8c5;
+			- _myState = 10240;
+			- _name = "listBiensAchete_acheteur";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 6f998389-6222-4c27-a846-37fee655c789;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID afe418ee-dbb3-425c-848c-73cd40d6fba1;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID ecdf45ad-57dd-48dd-8b00-d5c472d80b53;
+			- _myState = 10240;
+			- _name = "Personne_acheteur";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 63a86d58-f7ea-40c4-a156-34837aea6708;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 54919e28-d155-474d-8640-39eeceb3fc16;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID 1323feb4-55a3-45aa-bdd6-e27f6076f51a;
+			- _myState = 10240;
+			- _name = "listVoeux_acheteurPotentiel";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 28939498-1141-47e9-8e53-d033cb1b385f;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID eb160a65-a92b-45cf-a70b-1fb57371ff94;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID cc2cbda5-96ea-47b7-99d8-65ac2bb3d57f;
+			- _myState = 10240;
+			- _name = "Personne_Client";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 9a977809-c83b-42a8-8016-31458e8979ec;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID bcf74002-1f54-4cd9-afe2-44afea12e0d2;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID b6ff5c0b-ce5b-467d-98e1-7156ca051fc1;
+			- _myState = 10240;
+			- _name = "MandatDeVente_enVente";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 49892e4d-e7e4-4cb7-8dc7-8d7847d6cb7a;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 24cbedc9-5ffa-4e35-82a6-d0f15f9f17c7;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID 9e38d4e9-0ceb-41f6-b07a-9b76926faf3c;
+			- _myState = 8192;
+			- _name = "bienEnVente_enVent";
+			- _displayName = "MandatDeVente_enVente";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 8b60ed32-1ec3-4066-940f-b0a25eb92c5a;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 76679d7e-6f63-4d43-bbe1-44811ac662a1;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID 8e6a41c5-aa6a-4819-ac1c-7e178194d956;
+			- _myState = 10240;
+			- _name = "listClients_estClient";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID c7e1973a-1df7-42ff-88a9-390df9706c7f;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID fef0b1b1-6a6e-47d1-acd6-c047c32b322f;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID 1b80eab4-0acb-44d7-847d-2a8aaaab3706;
+			- _myState = 10240;
+			- _name = "listSalesMandate_Person";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID cb91de9c-4028-4596-bfc3-46000f3f5105;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID abfcbcc6-7ce2-4db3-8969-d1769be652a9;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID 38a1bf01-3cf7-4fef-838c-b21e9ea823a0;
+			- _myState = 10240;
+			- _name = "SalesAgreement_Person";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 4fca8e67-7eb2-4552-9939-b8aa02c1691f;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 40ce84d0-3341-4770-a7f9-62e0e332cb57;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID 7cd3e9ce-9cd2-4d9e-bf3e-dcad4694e7f1;
+			- _myState = 10240;
+			- _name = "SalesMandate_Person_1";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 1;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 577debe6-acc9-4be9-acc0-7fad538902c2;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 4464e35c-65cf-4e42-964d-a33224f4ea1a;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID 3544523e-0d53-42f2-a587-d5a5d4c87127;
+			- _myState = 10240;
+			- _name = "isVisit_Person_1";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 085502d6-b683-460d-8c6c-5b1dbe8d21e9;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 16d086bb-da85-4dd8-aef2-de4100f02280;
+			}
+		}
+		{ IAssociationClass 
+			- _id = GUID eafd30d5-de76-400f-b0b4-3867925a51f7;
+			- _myState = 10240;
+			- _name = "AgenceImmobiliere_Notary";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+			- _isClass = 0;
+			- m_end1 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID 2a7e84a6-9f64-42de-93dc-58129a6057d6;
+			}
+			- m_end2 = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _id = GUID ef7d3114-bb5a-45da-b1b7-ebfe2b123660;
+			}
+		}
+	}
+	- _defaultComposite = GUID 028ff9e1-ae1f-4b7d-ab67-d4b0613f92f1;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 18;
+		- value = 
+		{ IClass 
+			- _id = GUID 028ff9e1-ae1f-4b7d-ab67-d4b0613f92f1;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- weakCGTime = 12.11.2017::10:54:29;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+			- _myState = 8192;
+			- _name = "Person";
+			- _modifiedTimeWeak = 12.11.2017::10:59:22;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- _lastID = 8;
+			- weakCGTime = 12.11.2017::10:59:22;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 18;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 50c4f646-75a6-4922-b471-38cc3c211469;
+					- _myState = 10240;
+					- _name = "itsProperty";
+					- _modifiedTimeWeak = 12.5.2017::15:35:23;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 11a509ba-5031-453a-b7c5-a856abeea848;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID e068812f-f9ad-40bb-87cd-892e2cd06049;
+					- _myState = 8192;
+					- _name = "listBiensEnVente";
+					- _modifiedTimeWeak = 12.4.2017::14:24:13;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 18571fea-1ef0-4c60-930f-701d60c97357;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID f88f356a-1550-4d38-890f-00b245f4e93b;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 6f998389-6222-4c27-a846-37fee655c789;
+					- _myState = 8192;
+					- _name = "listBiensAchete";
+					- _modifiedTimeWeak = 12.4.2017::14:28:55;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID afe418ee-dbb3-425c-848c-73cd40d6fba1;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 5d667452-43e0-479b-856d-1a3c3a49c8c5;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 54919e28-d155-474d-8640-39eeceb3fc16;
+					- _myState = 8192;
+					- _name = "acheteur";
+					- _modifiedTimeWeak = 12.5.2017::15:32:26;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 8c7439ab-e5b2-4d3b-be61-39318e73b3ef;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 63a86d58-f7ea-40c4-a156-34837aea6708;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = NonNavigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID ecdf45ad-57dd-48dd-8b00-d5c472d80b53;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 28939498-1141-47e9-8e53-d033cb1b385f;
+					- _myState = 8192;
+					- _name = "e";
+					- _modifiedTimeWeak = 12.5.2017::16:14:3;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 8c7439ab-e5b2-4d3b-be61-39318e73b3ef;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID eb160a65-a92b-45cf-a70b-1fb57371ff94;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 1323feb4-55a3-45aa-bdd6-e27f6076f51a;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID bcf74002-1f54-4cd9-afe2-44afea12e0d2;
+					- _myState = 8192;
+					- _name = "Client";
+					- _modifiedTimeWeak = 12.4.2017::14:40:54;
+					- _multiplicity = "1..*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID dcbec4ea-a809-4b07-98d7-50fc9008f622;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 9a977809-c83b-42a8-8016-31458e8979ec;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = NonNavigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID cc2cbda5-96ea-47b7-99d8-65ac2bb3d57f;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 49892e4d-e7e4-4cb7-8dc7-8d7847d6cb7a;
+					- _myState = 8192;
+					- _name = "salesMandatesList";
+					- _modifiedTimeWeak = 12.5.2017::15:56:37;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c2c52993-99e1-49a2-acc6-69d64e684a7f;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 24cbedc9-5ffa-4e35-82a6-d0f15f9f17c7;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID b6ff5c0b-ce5b-467d-98e1-7156ca051fc1;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID aad2c4f3-896c-4faf-a5c3-6725b6c83653;
+					- _myState = 10240;
+					- _name = "itsRealEstateAgency_2";
+					- _modifiedTimeWeak = 12.11.2017::9:53:15;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID dcbec4ea-a809-4b07-98d7-50fc9008f622;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 68c6216e-a0dd-4f24-a50c-b3c29b0691b8;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID ea574a55-3559-47a8-8c0d-14b552d95009;
+					- _myState = 10240;
+					- _name = "itsRealEstateAgency_1";
+					- _modifiedTimeWeak = 12.11.2017::9:53:15;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID dcbec4ea-a809-4b07-98d7-50fc9008f622;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID ea8ac207-e040-4479-9551-ae2699cb9313;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 9397a373-a145-405a-922e-24311a8e7df0;
+					- _myState = 10240;
+					- _name = "itsRealEstateAgency";
+					- _modifiedTimeWeak = 12.11.2017::9:53:15;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID dcbec4ea-a809-4b07-98d7-50fc9008f622;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID d91558d1-091c-4e11-bd1f-2dc090435d79;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID fef0b1b1-6a6e-47d1-acd6-c047c32b322f;
+					- _myState = 8192;
+					- _name = "isClient";
+					- _modifiedTimeWeak = 12.5.2017::15:39:3;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID dcbec4ea-a809-4b07-98d7-50fc9008f622;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID c7e1973a-1df7-42ff-88a9-390df9706c7f;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 8e6a41c5-aa6a-4819-ac1c-7e178194d956;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID cb91de9c-4028-4596-bfc3-46000f3f5105;
+					- _myState = 8192;
+					- _name = "listSalesMandate";
+					- _modifiedTimeWeak = 12.5.2017::15:52:27;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c2c52993-99e1-49a2-acc6-69d64e684a7f;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID abfcbcc6-7ce2-4db3-8969-d1769be652a9;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 1b80eab4-0acb-44d7-847d-2a8aaaab3706;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 4fca8e67-7eb2-4552-9939-b8aa02c1691f;
+					- _myState = 8192;
+					- _name = "listSalesAgreement";
+					- _modifiedTimeWeak = 12.5.2017::16:0:50;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c7e0e5ad-5af2-4dbe-a1db-2802b2e65feb;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 40ce84d0-3341-4770-a7f9-62e0e332cb57;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 38a1bf01-3cf7-4fef-838c-b21e9ea823a0;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 577debe6-acc9-4be9-acc0-7fad538902c2;
+					- _myState = 8192;
+					- _name = "itsSalesMandate";
+					- _modifiedTimeWeak = 12.5.2017::16:1:18;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c2c52993-99e1-49a2-acc6-69d64e684a7f;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 4464e35c-65cf-4e42-964d-a33224f4ea1a;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 7cd3e9ce-9cd2-4d9e-bf3e-dcad4694e7f1;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID dd50cdfd-78ad-47e4-8112-328289abb987;
+					- _myState = 10240;
+					- _name = "itsVisit";
+					- _modifiedTimeWeak = 12.5.2017::16:7:2;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 73ba4e27-1523-433f-ab0d-143a8d8461b8;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID f2bdba88-cd4f-4294-8724-cb086773c31e;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 085502d6-b683-460d-8c6c-5b1dbe8d21e9;
+					- _myState = 8192;
+					- _name = "isVisit";
+					- _modifiedTimeWeak = 12.5.2017::16:23:18;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 73ba4e27-1523-433f-ab0d-143a8d8461b8;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 16d086bb-da85-4dd8-aef2-de4100f02280;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 3544523e-0d53-42f2-a587-d5a5d4c87127;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID ebb71f60-b1c2-4a97-bb5f-7f45e7f2e8e0;
+					- _myState = 8192;
+					- _name = "listWishes";
+					- _modifiedTimeWeak = 12.11.2017::10:4:5;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 8c7439ab-e5b2-4d3b-be61-39318e73b3ef;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 6024face-1777-44da-a831-469dc1d618d4;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID a1b6425c-ac1b-44ad-96d8-6b0be5505a56;
+					- _myState = 8192;
+					- _name = "associatedNotary";
+					- _modifiedTimeWeak = 12.11.2017::10:19:14;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 207e8a15-079f-4f40-896a-821117bb4c63;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 794c027e-a155-456d-9846-d320ea7f6c3c;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 2d0a917c-e638-48da-a768-ec330fb7cab9;
+			- _myState = 8192;
+			- _name = "RealPersonn";
+			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- _lastID = 4;
+			- weakCGTime = 12.11.2017::10:54:29;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- Attrs = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 53a07fb9-384f-461f-8f16-09b6acc161d2;
+					- _myState = 8192;
+					- _name = "address";
+					- _modifiedTimeWeak = 12.11.2017::10:34:38;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "char*";
+						- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID b1afd675-cc3b-4c6d-b651-9e6ecd367ca2;
+					- _myState = 8192;
+					- _name = "email";
+					- _modifiedTimeWeak = 12.11.2017::10:34:48;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "char*";
+						- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 07097ddf-dfca-4807-965f-12c20456fab8;
+					- _myState = 8192;
+					- _name = "name";
+					- _modifiedTimeWeak = 12.11.2017::10:35:0;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "char*";
+						- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 9ad40fe9-21e6-4d6a-8d3c-5dd68cd89651;
+					- _myState = 8192;
+					- _name = "phoneNumber";
+					- _modifiedTimeWeak = 12.11.2017::10:35:23;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "char*";
+						- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID e988802b-0cb1-4002-b99e-ca04b74db9c1;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 1027cfa4-1558-4b9d-b8d8-daee056bf575;
+			- _myState = 8192;
+			- _name = "Corporation";
+			- _modifiedTimeWeak = 12.11.2017::10:56:31;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- _lastID = 2;
+			- weakCGTime = 12.11.2017::10:56:31;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- Attrs = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 0b03a4be-371a-4f20-93f2-faea53a417bc;
+					- _myState = 8192;
+					- _name = "numeroSiren";
+					- _modifiedTimeWeak = 12.11.2017::10:56:20;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 9661a4c9-a73d-4c40-9975-b582e7c9b875;
+					- _myState = 8192;
+					- _name = "legalForm";
+					- _modifiedTimeWeak = 12.11.2017::10:56:31;
+					- _typeOf = { IHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e61b0e7e-a425-4151-9b9a-83ae08b99304;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID 764beeb6-8695-4939-aaa2-15351affb2ea;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 881e7ce3-0eec-42dc-ad39-1a33c3624586;
+			- _myState = 8192;
+			- _name = "Plot";
+			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- weakCGTime = 12.11.2017::10:54:29;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID 4c63d359-e138-4740-9dd6-b92980333c21;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 2ef4b9d6-6449-429e-bb17-fe72515e3d49;
+					- _myState = 10240;
+					- _name = "itsProperty_2";
+					- _modifiedTimeWeak = 12.5.2017::15:35:51;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 1ed27507-1fdc-464f-8960-ecdf9b9c418b;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID ae6ba9c5-8bbe-4de1-9de9-6a6123852021;
+					- _myState = 10240;
+					- _name = "itsProperty_1";
+					- _modifiedTimeWeak = 12.5.2017::15:35:51;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID bdb81780-dee9-4a06-b320-5ccdb1fec4c6;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 8152ac8b-f6a6-42b9-a214-97311257327f;
+					- _myState = 10240;
+					- _name = "itsProperty";
+					- _modifiedTimeWeak = 12.5.2017::15:35:51;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID eb1ac3d8-626f-4f0a-85da-0fb312d874ba;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 6c27a314-0b50-423b-ac89-0fdf352415ac;
+					- _myState = 8192;
+					- _name = "listTerrains";
+					- _modifiedTimeWeak = 12.4.2017::14:8:31;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+			- _myState = 8192;
+			- _name = "Property";
+			- _modifiedTimeWeak = 12.11.2017::10:57:8;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- _lastID = 6;
+			- weakCGTime = 12.11.2017::10:57:8;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- Attrs = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 5ab4e641-ae7a-476e-abad-e3f3eeafd5d1;
+					- _myState = 8192;
+					- _name = "adress";
+					- _modifiedTimeWeak = 12.5.2017::15:34:7;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "char*";
+						- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 8e4fbe91-8409-48f3-8c29-dd41e761d89e;
+					- _myState = 8192;
+					- _name = "orientation";
+					- _modifiedTimeWeak = 12.11.2017::10:57:8;
+					- _typeOf = { IHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 3aab281a-3985-4f42-b309-528fa426d71f;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 10;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 1ed27507-1fdc-464f-8960-ecdf9b9c418b;
+					- _myState = 10240;
+					- _name = "itsPlot_2";
+					- _modifiedTimeWeak = 12.5.2017::15:35:51;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 881e7ce3-0eec-42dc-ad39-1a33c3624586;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 2ef4b9d6-6449-429e-bb17-fe72515e3d49;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID bdb81780-dee9-4a06-b320-5ccdb1fec4c6;
+					- _myState = 10240;
+					- _name = "itsPlot";
+					- _modifiedTimeWeak = 12.5.2017::15:35:51;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 881e7ce3-0eec-42dc-ad39-1a33c3624586;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID ae6ba9c5-8bbe-4de1-9de9-6a6123852021;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID eb1ac3d8-626f-4f0a-85da-0fb312d874ba;
+					- _myState = 10240;
+					- _name = "itsPlot_1";
+					- _modifiedTimeWeak = 12.5.2017::15:35:51;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 881e7ce3-0eec-42dc-ad39-1a33c3624586;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 8152ac8b-f6a6-42b9-a214-97311257327f;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 98eccb44-1bf4-4814-a43c-1841323fda18;
+					- _myState = 8192;
+					- _name = "listBiensEnVente";
+					- _modifiedTimeWeak = 12.4.2017::14:19:31;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 11a509ba-5031-453a-b7c5-a856abeea848;
+					- _myState = 10240;
+					- _name = "itsPerson";
+					- _modifiedTimeWeak = 12.5.2017::15:35:23;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 50c4f646-75a6-4922-b471-38cc3c211469;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID f398e802-cd96-43b7-8589-92a9a0e466dd;
+					- _myState = 8192;
+					- _name = "listBienAchete";
+					- _modifiedTimeWeak = 12.4.2017::14:19:47;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 18571fea-1ef0-4c60-930f-701d60c97357;
+					- _myState = 8192;
+					- _name = "vendeur";
+					- _modifiedTimeWeak = 12.4.2017::14:24:13;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID e068812f-f9ad-40bb-87cd-892e2cd06049;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = NonNavigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID f88f356a-1550-4d38-890f-00b245f4e93b;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID afe418ee-dbb3-425c-848c-73cd40d6fba1;
+					- _myState = 8192;
+					- _name = "ancienAcheteur";
+					- _modifiedTimeWeak = 12.4.2017::14:28:55;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 6f998389-6222-4c27-a846-37fee655c789;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = NonNavigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 5d667452-43e0-479b-856d-1a3c3a49c8c5;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 76679d7e-6f63-4d43-bbe1-44811ac662a1;
+					- _myState = 8192;
+					- _name = "onSale";
+					- _modifiedTimeWeak = 12.5.2017::15:40:23;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c2c52993-99e1-49a2-acc6-69d64e684a7f;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 8b60ed32-1ec3-4066-940f-b0a25eb92c5a;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = NonNavigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 9e38d4e9-0ceb-41f6-b07a-9b76926faf3c;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 83dc39ed-1975-41c5-99b4-2a5d46cd1636;
+					- _myState = 10240;
+					- _name = "itsSalesAgreement";
+					- _modifiedTimeWeak = 12.5.2017::15:47:7;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c7e0e5ad-5af2-4dbe-a1db-2802b2e65feb;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 01bd0718-f636-4a18-b823-e5c064de575b;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID fcfc0069-7e7b-4963-beaa-2587c4a5e020;
+			- _myState = 8192;
+			- _name = "House";
+			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- weakCGTime = 12.11.2017::10:54:29;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- Inheritances = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID aee7d8b4-4bf1-4c3c-ab7e-a6884f40474d;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+				{ IGeneralization 
+					- _id = GUID 0c8e0c2a-3067-4cbb-91a6-2b3eeb16e86a;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 881e7ce3-0eec-42dc-ad39-1a33c3624586;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID c1dfcde8-c821-475d-b6db-fe0ea096b4c4;
+			- _myState = 8192;
+			- _name = "Flat";
+			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- weakCGTime = 12.11.2017::10:54:29;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- Inheritances = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID d05bf1f4-2e35-4982-abba-78428ff63fdb;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+				{ IGeneralization 
+					- _id = GUID cc18fcde-ebb5-4fe8-8822-f3af5f8cf285;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 881e7ce3-0eec-42dc-ad39-1a33c3624586;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 8c7439ab-e5b2-4d3b-be61-39318e73b3ef;
+			- _myState = 8192;
+			- _name = "Wish";
+			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- weakCGTime = 12.11.2017::10:54:29;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 63a86d58-f7ea-40c4-a156-34837aea6708;
+					- _myState = 10240;
+					- _name = "itsPerson";
+					- _modifiedTimeWeak = 12.5.2017::15:32:26;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 54919e28-d155-474d-8640-39eeceb3fc16;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID ecdf45ad-57dd-48dd-8b00-d5c472d80b53;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID eb160a65-a92b-45cf-a70b-1fb57371ff94;
+					- _myState = 8192;
+					- _name = "ff";
+					- _modifiedTimeWeak = 12.5.2017::16:14:3;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 28939498-1141-47e9-8e53-d033cb1b385f;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = NonNavigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 1323feb4-55a3-45aa-bdd6-e27f6076f51a;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 6024face-1777-44da-a831-469dc1d618d4;
+					- _myState = 8192;
+					- _name = "potentialBuyer";
+					- _modifiedTimeWeak = 12.11.2017::10:4:5;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID ebb71f60-b1c2-4a97-bb5f-7f45e7f2e8e0;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID dcbec4ea-a809-4b07-98d7-50fc9008f622;
+			- _myState = 8192;
+			- _name = "RealEstateAgency";
+			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- weakCGTime = 12.11.2017::10:54:29;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 8;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 9a977809-c83b-42a8-8016-31458e8979ec;
+					- _myState = 8192;
+					- _name = "listClient";
+					- _modifiedTimeWeak = 12.4.2017::14:40:7;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID bcf74002-1f54-4cd9-afe2-44afea12e0d2;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID cc2cbda5-96ea-47b7-99d8-65ac2bb3d57f;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 68c6216e-a0dd-4f24-a50c-b3c29b0691b8;
+					- _myState = 10240;
+					- _name = "itsPerson";
+					- _modifiedTimeWeak = 12.11.2017::9:53:15;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID aad2c4f3-896c-4faf-a5c3-6725b6c83653;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID ea8ac207-e040-4479-9551-ae2699cb9313;
+					- _myState = 10240;
+					- _name = "itsPerson_2";
+					- _modifiedTimeWeak = 12.11.2017::9:53:15;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID ea574a55-3559-47a8-8c0d-14b552d95009;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID d91558d1-091c-4e11-bd1f-2dc090435d79;
+					- _myState = 10240;
+					- _name = "itsPerson_1";
+					- _modifiedTimeWeak = 12.11.2017::9:53:15;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 9397a373-a145-405a-922e-24311a8e7df0;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID c7e1973a-1df7-42ff-88a9-390df9706c7f;
+					- _myState = 8192;
+					- _name = "listClients";
+					- _modifiedTimeWeak = 12.5.2017::15:39:3;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID fef0b1b1-6a6e-47d1-acd6-c047c32b322f;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 8e6a41c5-aa6a-4819-ac1c-7e178194d956;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID c92376f8-4c5e-4294-86f3-a916c7a2c18f;
+					- _myState = 8192;
+					- _name = "listVisit";
+					- _modifiedTimeWeak = 12.5.2017::16:10:6;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 73ba4e27-1523-433f-ab0d-143a8d8461b8;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID b535a5a7-92e8-4fb0-84df-9a076381005f;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID aa910680-5d7c-4503-9759-60d4d8063bf1;
+					- _myState = 8192;
+					- _name = "visit";
+					- _modifiedTimeWeak = 12.5.2017::16:23:25;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 73ba4e27-1523-433f-ab0d-143a8d8461b8;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 8892c52b-32c5-4c0d-bd44-422e70a7ebf4;
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID ef7d3114-bb5a-45da-b1b7-ebfe2b123660;
+					- _myState = 8192;
+					- _name = "receve";
+					- _modifiedTimeWeak = 12.5.2017::16:41:40;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 207e8a15-079f-4f40-896a-821117bb4c63;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 2a7e84a6-9f64-42de-93dc-58129a6057d6;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = NonNavigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID eafd30d5-de76-400f-b0b4-3867925a51f7;
+					}
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID c2c52993-99e1-49a2-acc6-69d64e684a7f;
+			- _myState = 8192;
+			- _name = "SalesMandate";
+			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- _lastID = 6;
+			- weakCGTime = 12.11.2017::10:54:29;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- Attrs = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 77c73c4e-985d-4909-9528-924ceb9c79af;
+					- _myState = 8192;
+					- _name = "desiredPrice";
+					- _modifiedTimeWeak = 12.5.2017::15:41:13;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "float";
+						- _id = GUID 49a1890b-9064-409b-bd56-859d88083577;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 606c6a6f-a83c-4d5a-86f3-23c0a6c7c186;
+					- _myState = 8192;
+					- _name = "availabilityDate";
+					- _modifiedTimeWeak = 12.5.2017::15:41:41;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "char*";
+						- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 17532eaf-34d5-47f6-bb58-68dcd39777df;
+					- _myState = 8192;
+					- _name = "desiredSaleDate";
+					- _modifiedTimeWeak = 12.5.2017::15:42:8;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "char*";
+						- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 71d503f0-a001-43cd-9195-391aa80c23ae;
+					- _myState = 8192;
+					- _name = "saleState";
+					- _modifiedTimeWeak = 12.5.2017::16:29:46;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "bool";
+						- _id = GUID e6c263cc-4bc5-4a11-b32d-02148c93add0;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 24cbedc9-5ffa-4e35-82a6-d0f15f9f17c7;
+					- _myState = 8192;
+					- _name = "gfd";
+					- _modifiedTimeWeak = 12.5.2017::15:56:37;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 49892e4d-e7e4-4cb7-8dc7-8d7847d6cb7a;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = NonNavigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID b6ff5c0b-ce5b-467d-98e1-7156ca051fc1;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 8b60ed32-1ec3-4066-940f-b0a25eb92c5a;
+					- _myState = 8192;
+					- _name = "propertiesOnSale";
+					- _modifiedTimeWeak = 12.5.2017::15:40:23;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 76679d7e-6f63-4d43-bbe1-44811ac662a1;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 9e38d4e9-0ceb-41f6-b07a-9b76926faf3c;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID abfcbcc6-7ce2-4db3-8969-d1769be652a9;
+					- _myState = 10240;
+					- _name = "itsPerson";
+					- _modifiedTimeWeak = 12.5.2017::15:52:27;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID cb91de9c-4028-4596-bfc3-46000f3f5105;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 1b80eab4-0acb-44d7-847d-2a8aaaab3706;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 4464e35c-65cf-4e42-964d-a33224f4ea1a;
+					- _myState = 8192;
+					- _name = "seller";
+					- _modifiedTimeWeak = 12.5.2017::15:59:5;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 577debe6-acc9-4be9-acc0-7fad538902c2;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 7cd3e9ce-9cd2-4d9e-bf3e-dcad4694e7f1;
+					}
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID c7e0e5ad-5af2-4dbe-a1db-2802b2e65feb;
+			- _myState = 8192;
+			- _name = "SalesAgreement";
+			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- weakCGTime = 12.11.2017::10:54:29;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 01bd0718-f636-4a18-b823-e5c064de575b;
+					- _myState = 10240;
+					- _name = "itsProperty";
+					- _modifiedTimeWeak = 12.5.2017::15:47:7;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 83dc39ed-1975-41c5-99b4-2a5d46cd1636;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID e501b258-578e-459e-ba86-e6cb5a2fc5d6;
+					- _myState = 10240;
+					- _name = "itsProperty_1";
+					- _modifiedTimeWeak = 12.5.2017::15:47:20;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 1ebd8df4-f3e8-4ae3-9444-323c421f2e1c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 40ce84d0-3341-4770-a7f9-62e0e332cb57;
+					- _myState = 8192;
+					- _name = "buyer";
+					- _modifiedTimeWeak = 12.5.2017::15:54:16;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 4fca8e67-7eb2-4552-9939-b8aa02c1691f;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 38a1bf01-3cf7-4fef-838c-b21e9ea823a0;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 2591f5e1-9ca3-4bd1-92e4-a123888679e5;
+					- _myState = 10240;
+					- _name = "itsNotary";
+					- _modifiedTimeWeak = 12.5.2017::16:38:46;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 207e8a15-079f-4f40-896a-821117bb4c63;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 9db51bad-419c-4f1c-a5fb-155081a998a1;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 73ba4e27-1523-433f-ab0d-143a8d8461b8;
+			- _myState = 8192;
+			- _name = "Visit";
+			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- weakCGTime = 12.11.2017::10:54:29;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 5;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID b535a5a7-92e8-4fb0-84df-9a076381005f;
+					- _myState = 8192;
+					- _name = "isOrganise";
+					- _modifiedTimeWeak = 12.5.2017::16:10:6;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID dcbec4ea-a809-4b07-98d7-50fc9008f622;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID c92376f8-4c5e-4294-86f3-a916c7a2c18f;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID f2bdba88-cd4f-4294-8724-cb086773c31e;
+					- _myState = 10240;
+					- _name = "itsPerson";
+					- _modifiedTimeWeak = 12.5.2017::16:7:16;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID dd50cdfd-78ad-47e4-8112-328289abb987;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 6c1ccb4d-ab62-431c-9b93-a195f2f9963c;
+					- _myState = 10240;
+					- _name = "itsRealEstateAgency";
+					- _modifiedTimeWeak = 12.11.2017::9:53:15;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID dcbec4ea-a809-4b07-98d7-50fc9008f622;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 8892c52b-32c5-4c0d-bd44-422e70a7ebf4;
+					- _myState = 8192;
+					- _name = "listVisit";
+					- _modifiedTimeWeak = 12.5.2017::16:23:25;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID dcbec4ea-a809-4b07-98d7-50fc9008f622;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID aa910680-5d7c-4503-9759-60d4d8063bf1;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 16d086bb-da85-4dd8-aef2-de4100f02280;
+					- _myState = 8192;
+					- _name = "listVisitor";
+					- _modifiedTimeWeak = 12.5.2017::16:22:54;
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 085502d6-b683-460d-8c6c-5b1dbe8d21e9;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = NonNavigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID 3544523e-0d53-42f2-a587-d5a5d4c87127;
+					}
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 207e8a15-079f-4f40-896a-821117bb4c63;
+			- _myState = 8192;
+			- _name = "Notary";
+			- _modifiedTimeWeak = 12.11.2017::10:58:31;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- _lastID = 3;
+			- weakCGTime = 12.11.2017::10:58:31;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- Attrs = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ IAttribute 
+					- _id = GUID a9cf263a-1df2-4a50-9a96-97df19412512;
+					- _myState = 8192;
+					- _name = "adress";
+					- _modifiedTimeWeak = 12.5.2017::16:37:58;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "char*";
+						- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 956e0a9a-d944-4dce-b802-5538af5e36a0;
+					- _myState = 8192;
+					- _name = "moneyState";
+					- _modifiedTimeWeak = 12.11.2017::10:58:31;
+					- _typeOf = { IHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 94f9523e-fd85-4666-9be2-27014c43a59f;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID b79174b0-1f8f-4196-b9e6-7bc432460c97;
+					- _myState = 8192;
+					- _name = "seller";
+					- _modifiedTimeWeak = 12.5.2017::16:52:2;
+					- _typeOf = { IHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 9db51bad-419c-4f1c-a5fb-155081a998a1;
+					- _myState = 10240;
+					- _name = "itsSalesAgreement";
+					- _modifiedTimeWeak = 12.5.2017::16:38:46;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c7e0e5ad-5af2-4dbe-a1db-2802b2e65feb;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 2591f5e1-9ca3-4bd1-92e4-a123888679e5;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 2a7e84a6-9f64-42de-93dc-58129a6057d6;
+					- _myState = 8192;
+					- _name = "pay";
+					- _modifiedTimeWeak = 12.5.2017::16:41:40;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID dcbec4ea-a809-4b07-98d7-50fc9008f622;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID ef7d3114-bb5a-45da-b1b7-ebfe2b123660;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+					- m_associationClass = { IHandle 
+						- _m2Class = "IAssociationClass";
+						- _id = GUID eafd30d5-de76-400f-b0b4-3867925a51f7;
+					}
+				}
+				{ IAssociationEnd 
+					- _id = GUID 794c027e-a155-456d-9846-d320ea7f6c3c;
+					- _myState = 8192;
+					- _name = "associatedClient";
+					- _modifiedTimeWeak = 12.11.2017::10:19:14;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 2ff08284-aef7-41e7-a177-f1270121f718;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID a1b6425c-ac1b-44ad-96d8-6b0be5505a56;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 8679b77e-39b3-47fa-a9d4-ebf9f8ff725a;
+			- _myState = 8192;
+			- _name = "yoloTest";
+			- _modifiedTimeWeak = 12.11.2017::10:54:29;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- weakCGTime = 12.11.2017::10:54:29;
+			- strongCGTime = 12.11.2017::10:54:29;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID e61b0e7e-a425-4151-9b9a-83ae08b99304;
+			- _myState = 8192;
+			- _name = "CorporationLegalForm";
+			- _modifiedTimeWeak = 12.11.2017::10:54:51;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- weakCGTime = 12.11.2017::10:54:51;
+			- strongCGTime = 12.11.2017::10:54:51;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 3aab281a-3985-4f42-b309-528fa426d71f;
+			- _myState = 8192;
+			- _name = "Orientation";
+			- _modifiedTimeWeak = 12.11.2017::10:56:56;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- weakCGTime = 12.11.2017::10:56:56;
+			- strongCGTime = 12.11.2017::10:56:56;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 94f9523e-fd85-4666-9be2-27014c43a59f;
+			- _myState = 8192;
+			- _name = "NotaryMoneyState";
+			- _modifiedTimeWeak = 12.11.2017::10:58:21;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Class Diagram";
+				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
+			}
+			- weakCGTime = 12.11.2017::10:58:21;
+			- strongCGTime = 12.11.2017::10:58:21;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 12.4.2017::14:3:59;
+}
+
