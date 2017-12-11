@@ -13,4 +13,26 @@ public class Notary {
 		this.associatedClient = associatedClient;
 		this.moneyState = NotaryMoneyStates.noMoneyReceived;
 	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public Person getAssociatedClient() {
+		return associatedClient;
+	}
+
+	public void setAssociatedClient(Person associatedClient) {
+		this.associatedClient = associatedClient;
+	}
+
+	public NotaryMoneyStates getMoneyState() {
+		return moneyState;
+	}
+	
+	
 }
