@@ -52,9 +52,28 @@ public class Person {
 	}
 
 	public void putPropertyOnSale(Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice){
-		SalesMandate sMand = new SalesMandate(availabilityDate, desiredSaleDate, desiredPrice);
+		SalesMandate sMand = new SalesMandate(prop, availabilityDate, desiredSaleDate, desiredPrice);
 		prop.setSaleMandate(sMand);
 		this.listSalesMandate.add(sMand);
+	}
+	
+	public boolean removePropertyFromSale(Property prop){
+		int rankSaleAgreement = -1;
+		boolean isPropertyStillOnSale = false;
+		
+		for(int i = 0; i < this.listSalesMandate.size(); i++){
+			if(this.listSalesMandate.get(i).getProperty().equals(prop)) rankSaleAgreement = i;
+		}
+		
+		if(rankSaleAgreement != -1){
+			isPropertyStillOnSale = true;
+			if(!this.listSalesMandate.get(rankSaleAgreement).isSaleState()){
+				this.listSalesMandate.remove(rankSaleAgreement);
+				isPropertyStillOnSale = false;
+			}
+		}
+		
+		return isPropertyStillOnSale;
 	}
 
 	public String getAddress() {

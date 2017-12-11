@@ -214,7 +214,7 @@ I-Logix-RPY-Archive version 8.12.0 C++ 9728113
 				}
 			}
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "12.11.2017::14:22:12";
+			- _lastModifiedTime = "12.11.2017::14:42:12";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID cff04aab-6100-458e-949d-74d6c0caa970;
 				- m_type = 0;

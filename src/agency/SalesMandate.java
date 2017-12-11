@@ -2,18 +2,26 @@ package agency;
 
 import java.util.Date;
 
+import property.Property;
+
 public class SalesMandate {
 
+	private final Property property;
 	private Date availabilityDate;
 	private Date desiredSaleDate;
 	private float desiredPrice;
 	private boolean saleState;
 	
-	public SalesMandate(Date availabilityDate, Date desiredSaleDate, float desiredPrice){
+	public SalesMandate(Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice){
+		this.property = prop;
 		this.availabilityDate = availabilityDate;
 		this.desiredSaleDate = desiredSaleDate;
 		this.desiredPrice = desiredPrice;
 		this.saleState = false;
+	}
+	
+	public Property getProperty() {
+		return property;
 	}
 
 	public Date getAvailabilityDate() {
