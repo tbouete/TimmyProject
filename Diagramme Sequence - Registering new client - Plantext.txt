@@ -1,0 +1,31 @@
+@startuml
+
+title "Sequence Diagram : Registering new client"
+
+alt Registering  new Seller
+
+    RealEstateAgency -> Person : new Person seller(address, email, name, phoneNumber, addressNotary)
+    Person -> Notary : new Notary notary(addressNotary, this)
+    Person -> Person : setAssociatedNotary(notary)
+    RealEstateAgency -> RealEstateAgency : registerSeller(seller, dateOfVisit)
+    RealEstateAgency -> RealEstateAgency :listClients.add(seller)
+    RealEstateAgency -> Visit : new Visit vis(seller, dateOfVisit, registrationMessage)
+    RealEstateAgency -> RealEstateAgency : listVisit.add(vis)
+end
+
+alt Registering new Buyer
+    
+    RealEstateAgency -> Person : new Person buyer(address, email, name, phoneNumber, addressNotary)
+    Person -> Wish : new Wish wish(desiredPrice, floorArea, localisation, numberRooms, typeOfProperty)
+    Person -> Person : addListWishes(wish)
+    RealEstateAgency -> RealEstateAgency : registerBuyer(buyer)
+    
+    alt Wish available for sell
+    
+    RealEstateAgency -> Visit : new Visit vis(buyer, dateOfVisit, propertyVisitedMessage)
+    
+    end
+
+end
+
+@enduml
