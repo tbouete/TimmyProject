@@ -23,7 +23,12 @@ public class Person {
 	
 	private Notary associatedNotary;
 	
-	public Person(String addressNotary){
+	public Person(String address, String email, String name, String phoneNumber, String addressNotary){
+		this.address = address;
+		this.email = email;
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+		
 		this.associatedNotary = new Notary(addressNotary, this);
 		
 		this.listSalesAgreement = new ArrayList<>();

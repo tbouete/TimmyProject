@@ -5,8 +5,8 @@ public class Corporation extends Person {
 	private String numeroSiren;
 	private CorporationLegalForm legalForm;
 	
-	public Corporation(String numeroSiren, CorporationLegalForm legalForm,String addressNotary) {
-		super(addressNotary);
+	public Corporation(String address, String email, String name, String phoneNumber, String numeroSiren, CorporationLegalForm legalForm,String addressNotary) {
+		super(address, email, name, phoneNumber, addressNotary);
 		this.numeroSiren = numeroSiren;
 		this.legalForm = legalForm;
 	}
