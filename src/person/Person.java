@@ -128,6 +128,7 @@ public class Person
 	}
 
 
+	public float payMoneyForSalesAgreement(float amount, int salesAgreementID){ return this.listSalesAgreement.get(salesAgreementID).receiveMoney(amount); }
 
 	public String getAddress() 
 	{
