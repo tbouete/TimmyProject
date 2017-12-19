@@ -30,8 +30,8 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 				- _name = "Class Diagram";
 				- _id = GUID abace9ca-dd5f-4dbd-bce6-346e1fca6d1f;
 			}
-			- _UpLeft = 471 43 ;
-			- _DownRight = 1534 701 ;
+			- _UpLeft = 281 203 ;
+			- _DownRight = 1344 861 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 1;
@@ -55,11 +55,16 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 	}
 
 	- m_favoritesTree = {
-		count=1;
+		count=2;
 		{ - favoritesItem
 			generation = 0;
 			name = Favorites;
-			idOrFolder = folder;
+			idOrFolder = folder-expanded;
+		}
+		{ - favoritesItem
+			generation = 1;
+			name = TimmyProject;
+			idOrFolder = GUID 87f778f8-58a2-45c7-a5d4-71037979c3a3;
 		}
 	}
 

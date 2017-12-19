@@ -20,6 +20,7 @@ public class Person {
 	private List<SalesAgreement> listSalesAgreement;
 	private List<SalesMandate> 	 listSalesMandate;
 	private List<Wish> 			 listWhishes;
+	private boolean PropertySimilirarToWishAvailable;
 	
 	private Notary associatedNotary;
 	
@@ -36,6 +37,8 @@ public class Person {
 		this.listWhishes 		= new ArrayList<>();
 		
 	}
+	
+	
 	
 	@Override
 	public boolean equals(Object obj) {
@@ -54,6 +57,12 @@ public class Person {
 		if(ret) ret = tmp.getPhoneNumber().equals(this.getPhoneNumber());
 		
 		return ret;
+	}
+	
+	public void addWish(Wish wish){
+		for(Wish w : this.listWhishes)
+			if(w.equals(wish)) this.listWhishes.add(wish);
+		//TODO : si propriété similaire en vente, créer chnager this.PropertySimilirarToWishAvailable à true
 	}
 
 	public void putPropertyOnSale(Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice){
