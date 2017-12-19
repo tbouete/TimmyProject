@@ -32,6 +32,8 @@ public class RealEstateAgency {
 		
 	}
 	
+	
+	
 	/**
 	 * 
 	 * @param vis The @Visit at which this mandate has been signed. This @Visit must be known by the @RealEstateAgency this method is being called upon.
@@ -53,5 +55,7 @@ public class RealEstateAgency {
 		vis.getClient().putPropertyOnSale(prop, availabilityDate, desiredSaleDate, desiredPrice);
 		vis.setHasHappened(true);
 	}
+	
+	
 	
 }
