@@ -32,6 +32,8 @@ public class RealEstateAgency {
 		
 	}
 	
+	
+	
 	public void registerBuyer(Person buyer, Wish[] wishes){
 		boolean clientAlreadyExists = false;
 		for(Person client : this.listClients){
@@ -58,17 +60,21 @@ public class RealEstateAgency {
 	 * @param desiredPrice
 	 * @throws IllegalArgumentException if @vis is not known by this @RealEstateAgency
 	 */
-	public void signSaleMandate(Visit vis, Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice) throws IllegalArgumentException{
+	public void signSaleMandate(Visit vis, Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice){
 		//Test if the visit is planned by the agency
-		boolean visitIsPlanned = false;
-		for(Visit v : this.listVisits){
-			Boolean.logicalOr(visitIsPlanned, v.equals(vis));
+		try{
+			boolean visitIsPlanned = false;
+			for(Visit v : this.listVisits){
+				Boolean.logicalOr(visitIsPlanned, v.equals(vis));
+			}
+			if(!visitIsPlanned) System.out.println("Ce rendez-vous n'est pas prévus par l'agence !");;
+
+
+			vis.getClient().putPropertyOnSale(prop, availabilityDate, desiredSaleDate, desiredPrice);
+			vis.setHasHappened(true);
+		}catch (Exception e) {
+			System.out.println("Ce client est enregistré comme acheteur uniquement et ne peux donc pas signer de mandats de ventes");
 		}
-		if(!visitIsPlanned) throw new IllegalArgumentException();
-		
-		
-		vis.getClient().putPropertyOnSale(prop, availabilityDate, desiredSaleDate, desiredPrice);
-		vis.setHasHappened(true);
 	}
 	
 	

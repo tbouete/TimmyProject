@@ -52,6 +52,9 @@ public class SalesMandate {
 		return saleState;
 	}
 	
+	public void setSaleState(boolean state){
+		this.saleState = state;
+	}
 	
 	
 	
