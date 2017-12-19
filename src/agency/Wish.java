@@ -1,6 +1,5 @@
 package agency;
 
-import person.Person;
 import property.PropertyTypes;
 
 public class Wish {
