@@ -24,7 +24,9 @@ public class Person {
 	
 	private Notary associatedNotary;
 	
-	public Person(String address, String email, String name, String phoneNumber, String addressNotary){
+	//Seller
+	public Person(String address, String email, String name, String phoneNumber, String addressNotary)
+	{
 		this.address = address;
 		this.email = email;
 		this.name = name;
@@ -32,6 +34,19 @@ public class Person {
 		
 		this.associatedNotary = new Notary(addressNotary, this);
 		
+		this.listSalesAgreement = new ArrayList<>();
+		this.listSalesMandate 	= new ArrayList<>();
+		this.listWhishes 		= new ArrayList<>();
+		
+	}
+	
+	//Buyer
+	public Person(String address, String email, String name, String phoneNumber){
+		this.address = address;
+		this.email = email;
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+				
 		this.listSalesAgreement = new ArrayList<>();
 		this.listSalesMandate 	= new ArrayList<>();
 		this.listWhishes 		= new ArrayList<>();
@@ -65,7 +80,9 @@ public class Person {
 		//TODO : si propriété similaire en vente, changer this.PropertySimilirarToWishAvailable à true
 	}
 
-	public void putPropertyOnSale(Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice){
+	public void putPropertyOnSale(Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice) throws Exception
+	{
+		if(this.associatedNotary == null) throw new Exception("Cannot use putPropertyOnSale because there is no notary(not a seller)");
 		SalesMandate sMand = new SalesMandate(prop, availabilityDate, desiredSaleDate, desiredPrice);
 		prop.setSaleMandate(sMand);
 		this.listSalesMandate.add(sMand);
