@@ -32,6 +32,21 @@ public class RealEstateAgency {
 		
 	}
 	
+	public void registerBuyer(Person buyer, Wish[] wishes){
+		boolean clientAlreadyExists = false;
+		for(Person client : this.listClients){
+			Boolean.logicalOr(clientAlreadyExists, client.equals(buyer));
+		}
+		if(!clientAlreadyExists){
+			for(Wish w : wishes) buyer.addWish(w);
+			this.listClients.add(buyer);
+		}
+		
+		//Si le client est déjà enregistrer, parcourir la liste des clients existants et ajoutez les voeux au bon client.
+		else for(Person client : this.listClients) if(client.equals(buyer)) for(Wish w : wishes) buyer.addWish(w);
+		
+	}
+	
 	
 	
 	/**

@@ -62,7 +62,7 @@ public class Person {
 	public void addWish(Wish wish){
 		for(Wish w : this.listWhishes)
 			if(w.equals(wish)) this.listWhishes.add(wish);
-		//TODO : si propriété similaire en vente, créer chnager this.PropertySimilirarToWishAvailable à true
+		//TODO : si propriété similaire en vente, changer this.PropertySimilirarToWishAvailable à true
 	}
 
 	public void putPropertyOnSale(Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice){
