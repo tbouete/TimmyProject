@@ -3,8 +3,10 @@ package person;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Observable;
 
 import agency.Notary;
+import agency.NotaryMoneyStates;
 import agency.SalesAgreement;
 import agency.SalesMandate;
 import agency.Wish;
@@ -12,8 +14,7 @@ import property.Property;
 
 
 
-public class Person 
-{
+public class Person extends Observable{
 
 	private String address;
 	private String email;
@@ -87,14 +88,18 @@ public class Person
 
 	public void addWish(Wish wish)
 	{
-		for(Wish w : this.listWhishes)
-			if(w.equals(wish)) this.listWhishes.add(wish);
+		for(Wish w : this.listWhishes){
+			if(w.equals(wish)){
+				this.listWhishes.add(wish);
+				this.notifyObservers();
+			}
+		}
 		//TODO : si propriété similaire en vente, changer this.PropertySimilirarToWishAvailable à true
 	}
 
 	public void putPropertyOnSale(Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice) throws Exception
 	{
-		if(this.associatedNotary == null) throw new Exception("Cannot use putPropertyOnSale because there is no notary(not a seller)");
+		if(this.associatedNotary == null) throw new Exception("This client is registered as a buyer and cannot put properties on sale.");
 		
 		SalesMandate sMand = new SalesMandate(prop, availabilityDate, desiredSaleDate, desiredPrice);
 		prop.setSaleMandate(sMand);
@@ -127,8 +132,19 @@ public class Person
 		return isPropertyStillOnSale;
 	}
 
+	public void signSellAgreement(Property propertyToBeBought, Date saleDate, float sellingFees, float priceToPayTotal){
+		SalesAgreement sA = new SalesAgreement(propertyToBeBought, saleDate, sellingFees, priceToPayTotal);
+		this.listSalesAgreement.add(sA);
+		this.payMoneyForSalesAgreement(priceToPayTotal * sA.getPERCENTAGE_OF_PRICE_TO_PAY_ON_SIGN(), this.listSalesAgreement.indexOf(sA));
+	}
 
-	public float payMoneyForSalesAgreement(float amount, int salesAgreementID){ return this.listSalesAgreement.get(salesAgreementID).receiveMoney(amount); }
+	public float payMoneyForSalesAgreement(float amount, int salesAgreementID) throws IllegalArgumentException{
+		if(salesAgreementID > this.listSalesAgreement.size()) throw new IllegalArgumentException();
+		if(amount > 0) this.associatedNotary.setMoneyStat(NotaryMoneyStates.partialPaymentReceived);
+		return this.listSalesAgreement.get(salesAgreementID).receiveMoney(amount);
+	}
+	
+	
 
 	public String getAddress() 
 	{
@@ -194,5 +210,14 @@ public class Person
 		this.associatedNotary = associatedNotary;
 	}
 
+	public boolean isPropertySimilirarToWishAvailable() {
+		return PropertySimilirarToWishAvailable;
+	}
+
+	public void setPropertySimilirarToWishAvailable(boolean propertySimilirarToWishAvailable) {
+		PropertySimilirarToWishAvailable = propertySimilirarToWishAvailable;
+	}
+
+	
 
 }

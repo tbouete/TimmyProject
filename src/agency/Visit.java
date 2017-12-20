@@ -10,12 +10,18 @@ public class Visit {
 	private Date dateOfVisit;
 	private String description;
 	private boolean hasHappened;
+	private int idSalesAgreement; //if = -1, it means this visit does not concern a transaction.
 	
-	public Visit(Person client, Date dateOfVisit, String description){
+	public Visit(Person client, Date dateOfVisit, String description, int idSalesAgreement){
 		this.client = client;
 		this.dateOfVisit = dateOfVisit;
 		this.description = description;
+		this.idSalesAgreement = idSalesAgreement;
 		this.hasHappened = false;
+	}
+	
+	public Visit(Person client, Date dateOfVisit, String description){
+		this(client, dateOfVisit, description, -1);
 	}
 	
 	
@@ -45,6 +51,8 @@ public class Visit {
 	public Date getDate(){ return this.dateOfVisit; }
 	
 	public String getDescription(){ return this.description; }
+	
+	public int getIdSalesAgreement(){ return this.idSalesAgreement; }
 	
 	public boolean getHasHappened(){ return this.hasHappened; }
 	

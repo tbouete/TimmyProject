@@ -2,15 +2,19 @@ package agency;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
 
 import person.Person;
 import property.Property;
 
-public class RealEstateAgency {
+public class RealEstateAgency implements Observer{
 	
 	private List<Person> listClients;
 	private List<Visit>  listVisits;
+	private HashMap<Person, SalesMandate> propertiesSimilarToWishes;
 	
 	public RealEstateAgency(){
 		this.listClients = new ArrayList<>();
@@ -23,7 +27,10 @@ public class RealEstateAgency {
 		for(Person client : this.listClients){
 			Boolean.logicalOr(clientAlreadyExists, client.equals(seller));
 		}
-		if(!clientAlreadyExists) this.listClients.add(seller);
+		if(!clientAlreadyExists){
+			seller.addObserver(this);
+			this.listClients.add(seller);
+		}
 		
 		this.listVisits.add(new Visit(seller, dateOfVisit, new String(seller.getName() +
 																	  " is signing a sale mandate with " +
@@ -41,6 +48,7 @@ public class RealEstateAgency {
 		}
 		if(!clientAlreadyExists){
 			for(Wish w : wishes) buyer.addWish(w);
+			buyer.addObserver(this);
 			this.listClients.add(buyer);
 		}
 		
@@ -60,21 +68,73 @@ public class RealEstateAgency {
 	 * @param desiredPrice
 	 * @throws IllegalArgumentException if @vis is not known by this @RealEstateAgency
 	 */
-	public void signSaleMandate(Visit vis, Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice){
+	public void signSalesMandate(Visit vis, Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice) throws IllegalArgumentException{
 		//Test if the visit is planned by the agency
 		try{
-			boolean visitIsPlanned = false;
-			for(Visit v : this.listVisits){
-				Boolean.logicalOr(visitIsPlanned, v.equals(vis));
-			}
-			if(!visitIsPlanned) System.out.println("Ce rendez-vous n'est pas prévus par l'agence !");;
+			int indexOfVis = this.listVisits.indexOf(vis);
+			if(indexOfVis == -1) throw new IllegalArgumentException("This visit was not planned by the agency !");
 
 
-			vis.getClient().putPropertyOnSale(prop, availabilityDate, desiredSaleDate, desiredPrice);
-			vis.setHasHappened(true);
+			this.listVisits.get(indexOfVis).getClient().putPropertyOnSale(prop, availabilityDate, desiredSaleDate, desiredPrice);
+			this.listVisits.get(indexOfVis).setHasHappened(true);
 		}catch (Exception e) {
-			System.out.println("Ce client est enregistré comme acheteur uniquement et ne peux donc pas signer de mandats de ventes");
+			throw new IllegalArgumentException("This client is registered as buyer and therefore cannot sign sales mandates.");
 		}
+	}
+	
+	public void signSalesAgreement(Person buyer, Property propertyToBeBought, Date saleDate, float sellingFees, float priceToPayTotal) throws IllegalArgumentException{
+		int indexOfBuyer = this.listClients.indexOf(buyer);
+		if(indexOfBuyer == -1) throw new IllegalArgumentException("This client is not known by the agency.");
+		this.listClients.get(indexOfBuyer).signSellAgreement(propertyToBeBought, saleDate, sellingFees, priceToPayTotal);
+		
+		String descVis = new String(buyer.getName() + " is buying a property at " + propertyToBeBought.getAddress());
+		Visit vis = new Visit(buyer, saleDate, descVis, this.listClients.get(indexOfBuyer).getListSalesAgreement().size()-1);
+		
+		this.listVisits.add(vis);
+	}
+	
+	public void confirmTransaction(Visit vis) throws IllegalArgumentException{
+		int indexOfVis = this.listVisits.indexOf(vis);
+		if(indexOfVis == -1) throw new IllegalArgumentException("This visit was not planned by the agency !");
+		
+		if(vis.getIdSalesAgreement() == -1) throw new IllegalArgumentException("This visit is not about a transaction !");
+		SalesAgreement sAOfBuyer = vis.getClient().getListSalesAgreement().get(vis.getIdSalesAgreement());
+		this.listVisits.get(indexOfVis).getClient().payMoneyForSalesAgreement(sAOfBuyer.getMoneyLeftToBePaid(), vis.getIdSalesAgreement());
+		this.listVisits.get(indexOfVis).getClient().getAssociatedNotary().setMoneyStat(NotaryMoneyStates.fullPaymentReceived);
+		this.listVisits.get(indexOfVis).setHasHappened(true);
+		
+		
+	}
+
+	@Override
+	public void update(Observable o, Object arg) {
+		this.propertiesSimilarToWishes = this.lookForWishesAvailable();
+	}
+	
+	public void presentWishToBuyer(Person buyer, SalesMandate sMOfPropertyOnSale,Date dateOfVisit){
+		String visDesc = new String("Visit of " + sMOfPropertyOnSale.getProperty().getAddress() +
+				" by " + buyer.getName() +
+				" because it was similar to one of his/her wishes");
+
+		//Set a visit of the property in a exactly a month
+		Visit vis = new Visit(buyer, dateOfVisit, visDesc);
+	}
+	
+	private HashMap<Person, SalesMandate> lookForWishesAvailable(){
+		HashMap<Person, SalesMandate> propertiesSimilarToWishes= new HashMap<>();
+		for(Person personWithWishes : this.listClients){
+			for(Wish wish : personWithWishes.getListWhishes()){
+				for(Person personWithPropertiesOnSale : this.listClients){
+					for(SalesMandate sMOfPropertyOnSale : personWithPropertiesOnSale.getListSalesMandate()){
+						if(wish.compareToProperty(sMOfPropertyOnSale)){
+							personWithWishes.setPropertySimilirarToWishAvailable(true);
+							propertiesSimilarToWishes.put(personWithWishes, sMOfPropertyOnSale);
+						}
+					}
+				}
+			}
+		}
+		return propertiesSimilarToWishes;
 	}
 	
 	

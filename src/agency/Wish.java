@@ -1,5 +1,6 @@
 package agency;
 
+import property.Property;
 import property.PropertyTypes;
 
 public class Wish {
@@ -41,6 +42,19 @@ public class Wish {
 		return ret;
 	}
 
+	public boolean compareToProperty(SalesMandate sM){
+		boolean ret = false;
+		
+		ret = Boolean.logicalAnd(ret, sM.getDesiredPrice() <= this.desiredPriceWished * 1.1); //The price of the property should be at max 110% of the requested value
+		ret = Boolean.logicalAnd(ret, sM.getProperty().getAreaProperty() >= this.floorArea * 0.9); //The area of the property should be at least 90% of the requested value
+		ret = Boolean.logicalAnd(ret, sM.getProperty().getAddress().equals(this.getLocalisation()));
+		ret = Boolean.logicalAnd(ret, sM.getProperty().getClass().getName().equals(this.typeOfProperty.toString()));
+		if(this.typeOfProperty.equals(PropertyTypes.Flat) || this.typeOfProperty.equals(PropertyTypes.House)){
+			ret = Boolean.logicalAnd(ret, sM.getProperty().getNumberOfRooms() >= this.numberRooms);
+		}
+				
+		return ret;
+	}
 
 
 	protected float getDesiredPriceWished() {

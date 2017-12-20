@@ -3,7 +3,8 @@ package agency;
 public enum NotaryMoneyStates {
 
 	noMoneyReceived,
-	moneyToBeTransferred,
+	partialPaymentReceived,
+	fullPaymentReceived,
 	moneyTransferred;
 	
 }

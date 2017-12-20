@@ -34,5 +34,9 @@ public class Notary {
 		return moneyState;
 	}
 	
+	public void setMoneyStat(NotaryMoneyStates state){
+		this.moneyState = state;
+	}
+	
 	
 }
