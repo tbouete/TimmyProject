@@ -31,13 +31,15 @@ public class Main
 		 krustyKrabAgency.registerSeller(spongeBobSeller,new Date());
 		 Wish[] wishes = {new Wish(1500, 45, "PloufCity", 5, PropertyTypes.Flat)};
 		 krustyKrabAgency.registerBuyer(starfishPatrickBuyer, wishes);
-		 
+
 		 krustyKrabAgency.signSalesMandate(krustyKrabAgency.getListVisits().get(0), ananas, new Date(),
 				 						   new Date(System.currentTimeMillis() + 10 * 86400000), 1000);
 		 
 		 krustyKrabAgency.signSalesAgreement(starfishPatrickBuyer, ananas, new Date(System.currentTimeMillis() + 5 * 86400000),
 				 							 50, 1450);
 		 
+		 System.out.println(spongeBobSeller);
+		 System.out.println(starfishPatrickBuyer);
 		 
 		 
 		 

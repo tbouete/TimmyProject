@@ -14,6 +14,23 @@ public class Notary {
 		this.moneyState = NotaryMoneyStates.noMoneyReceived;
 	}
 
+	
+	
+	@Override
+	public String toString() {
+		String ret = "";
+		
+		ret += "**Notary :**\n";
+		ret += "Address : " + this.address + "\n";
+		ret += "Name of the client this notary is associated to : " + this.associatedClient.getName() + "\n";
+		ret += "State of the notary : " + this.moneyState + "\n"; 
+		
+		ret += "\n";
+		return ret;				
+	}
+
+
+
 	public String getAddress() {
 		return address;
 	}

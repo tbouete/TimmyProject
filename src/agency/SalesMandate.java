@@ -20,6 +20,26 @@ public class SalesMandate {
 		this.saleState = false;
 	}
 	
+	
+	
+	@Override
+	public String toString() {
+		String ret = "";
+		
+		ret += "**SalesMandate**\n";
+		ret += "Address of the property concerned : " + this.property.getAddress() + "\n";
+		ret += "Desired price : " + this.desiredPrice + "\n";
+		ret += "Desired sale date : " + this.desiredSaleDate + "\n";
+		ret += "Availability date : " +  this.availabilityDate + "\n";
+		if(this.saleState) ret += "A sale agreement has been signed on this property, meaning this mandate cannot be canceled." + "\n";
+		else ret += "No sale agreement has been signed on this property, meaning this mandate be canceled." + "\n";
+		
+		ret += "\n";
+		return ret;
+	}
+
+
+
 	public Property getProperty() {
 		return property;
 	}

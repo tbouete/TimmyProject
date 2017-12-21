@@ -47,7 +47,7 @@ public class RealEstateAgency implements Observer{
 			Boolean.logicalOr(clientAlreadyExists, client.equals(buyer));
 		}
 		if(!clientAlreadyExists){
-			for(Wish w : wishes) buyer.addWish(w);
+			for(Wish w : wishes)buyer.addWish(w);
 			buyer.addObserver(this);
 			this.listClients.add(buyer);
 		}
@@ -66,7 +66,7 @@ public class RealEstateAgency implements Observer{
 	 * @param availabilityDate the @Date at which @prop will be available for sale.
 	 * @param desiredSaleDate
 	 * @param desiredPrice
-	 * @throws IllegalArgumentException if @vis is not known by this @RealEstateAgency
+	 * @throws IllegalArgumentException if @vis is not known by this @RealEstateAgency.
 	 */
 	public void signSalesMandate(Visit vis, Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice) throws IllegalArgumentException{
 		//Test if the visit is planned by the agency
@@ -122,12 +122,13 @@ public class RealEstateAgency implements Observer{
 
 		//Set a visit of the property in a exactly a month
 		Visit vis = new Visit(buyer, dateOfVisit, visDesc);
+		this.listVisits.add(vis);
 	}
 	
 	private HashMap<Person, SalesMandate> lookForWishesAvailable(){
 		HashMap<Person, SalesMandate> propertiesSimilarToWishes= new HashMap<>();
 		for(Person personWithWishes : this.listClients){
-			for(Wish wish : personWithWishes.getListWhishes()){
+			for(Wish wish : personWithWishes.getListWishes()){
 				for(Person personWithPropertiesOnSale : this.listClients){
 					for(SalesMandate sMOfPropertyOnSale : personWithPropertiesOnSale.getListSalesMandate()){
 						if(wish.compareToProperty(sMOfPropertyOnSale)){

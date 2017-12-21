@@ -23,7 +23,7 @@ public class Person extends Observable{
 
 	private List<SalesAgreement> listSalesAgreement;
 	private List<SalesMandate> 	 listSalesMandate;
-	private List<Wish> 			 listWhishes;
+	private List<Wish> 			 listWishes;
 	private boolean PropertySimilirarToWishAvailable;
 
 	private Notary associatedNotary;
@@ -40,8 +40,43 @@ public class Person extends Observable{
 
 		this.listSalesAgreement = new ArrayList<>();
 		this.listSalesMandate 	= new ArrayList<>();
-		this.listWhishes 		= new ArrayList<>();
+		this.listWishes 		= new ArrayList<>();
 
+	}
+
+
+
+	@Override
+	public String toString() {
+		String ret = "";
+
+		ret += "**Client**\n";
+		ret += "Client " + this.name + "\n";
+		ret += "Address : " + this.address +"\n";
+		ret += "Email : " + this.email  + "\n";
+		ret += "Phone number : " + this.phoneNumber + "\n";
+		ret += "Address of the notary associated to this client : " + this.associatedNotary.getAddress() + "\n";
+
+		if(this.listSalesAgreement.size() < 1) ret += "No property bought or being bought." + "\n";
+		else{
+			ret += "\n" + "Properties bought or being bought : \n";
+			for(SalesAgreement sA : this.listSalesAgreement) ret += sA.toString() + "\n";
+		}
+
+		if(this.listSalesMandate.size() < 1) ret += "No property sold or being sold." + "\n";
+		else{
+			ret += "\n" + "Properties sold or being sold : \n";
+			for(SalesMandate sM : this.listSalesMandate) ret += sM.toString();
+		}
+
+		if(this.listWishes.size() < 1) ret += "No buying wishes known.." + "\n";
+		else{
+			ret += "\n" + "Buying wishes : \n";
+			for(Wish w : this.listWishes) ret += w.toString() + "\n";
+		}
+		
+		ret += "\n";
+		return ret;
 	}
 
 
@@ -73,19 +108,15 @@ public class Person extends Observable{
 
 	public void addWish(Wish wish)
 	{
-		for(Wish w : this.listWhishes){
-			if(w.equals(wish)){
-				this.listWhishes.add(wish);
-				this.notifyObservers();
-			}
-		}
-		//TODO : si propriété similaire en vente, changer this.PropertySimilirarToWishAvailable à true
+		this.listWishes.add(wish);
+		this.notifyObservers();
 	}
 
 	public void putPropertyOnSale(Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice){	
 		SalesMandate sMand = new SalesMandate(prop, availabilityDate, desiredSaleDate, desiredPrice);
 		prop.setSaleMandate(sMand);
 		this.listSalesMandate.add(sMand);
+		this.notifyObservers();
 	}
 
 
@@ -177,9 +208,9 @@ public class Person extends Observable{
 		return listSalesMandate;
 	}
 
-	public List<Wish> getListWhishes() 
+	public List<Wish> getListWishes() 
 	{
-		return listWhishes;
+		return listWishes;
 	}
 
 	public Notary getAssociatedNotary() 

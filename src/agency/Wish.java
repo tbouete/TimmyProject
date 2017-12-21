@@ -25,17 +25,19 @@ public class Wish {
 	public String toString() {
 		String ret = "";
 		
-		ret += "Wish : a " + this.typeOfProperty.toString() + " ";
+		ret += "**Wish**\n";
+		ret += "Wish : A " + this.typeOfProperty.toString() + " ";
 		ret += "in " + this.localisation + " ";
 		
 		if(this.typeOfProperty.equals(PropertyTypes.Flat) || this.typeOfProperty.equals(PropertyTypes.House))
-			ret += " composed of " + this.numberRooms + " rooms ";
+			ret += "composed of " + this.numberRooms + " rooms ";
 		
 		if(this.typeOfProperty.equals(PropertyTypes.Plot) || this.typeOfProperty.equals(PropertyTypes.House))
 			ret += "with a floor area of " + this.floorArea + " m² ";
 		
 		ret += "at the price of " + this.desiredPriceWished + "€.";
 		
+		ret += "\n";
 		return ret;
 	}
 
@@ -106,12 +108,6 @@ public class Wish {
 	}
 	protected void setTypeOfProperty(PropertyTypes typeOfProperty) {
 		this.typeOfProperty = typeOfProperty;
-	}
-	
-	public static void main(String args[]){
-		Wish test = new Wish(0, 0, "", 0, PropertyTypes.Flat);
-		Wish tast = new Wish(0, 0, "", 0, PropertyTypes.Flat);
-		System.out.println(test.typeOfProperty == tast.typeOfProperty);
 	}
 	
 }
