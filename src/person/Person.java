@@ -29,8 +29,6 @@ public class Person extends Observable{
 	private Notary associatedNotary;
 
 	
-	
-	//Seller
 	public Person(String address, String email, String name, String phoneNumber, String addressNotary)
 	{
 		this.address = address;
@@ -44,19 +42,6 @@ public class Person extends Observable{
 		this.listSalesMandate 	= new ArrayList<>();
 		this.listWhishes 		= new ArrayList<>();
 
-	}
-
-	//Buyer
-	public Person(String address, String email, String name, String phoneNumber)
-	{
-		this.address = address;
-		this.email = email;
-		this.name = name;
-		this.phoneNumber = phoneNumber;
-
-		this.listSalesAgreement = new ArrayList<>();
-		this.listSalesMandate 	= new ArrayList<>();
-		this.listWhishes 		= new ArrayList<>();
 	}
 
 
@@ -97,10 +82,7 @@ public class Person extends Observable{
 		//TODO : si propriété similaire en vente, changer this.PropertySimilirarToWishAvailable à true
 	}
 
-	public void putPropertyOnSale(Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice) throws Exception
-	{
-		if(this.associatedNotary == null) throw new Exception("This client is registered as a buyer and cannot put properties on sale.");
-		
+	public void putPropertyOnSale(Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice){	
 		SalesMandate sMand = new SalesMandate(prop, availabilityDate, desiredSaleDate, desiredPrice);
 		prop.setSaleMandate(sMand);
 		this.listSalesMandate.add(sMand);

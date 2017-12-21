@@ -70,16 +70,14 @@ public class RealEstateAgency implements Observer{
 	 */
 	public void signSalesMandate(Visit vis, Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice) throws IllegalArgumentException{
 		//Test if the visit is planned by the agency
-		try{
-			int indexOfVis = this.listVisits.indexOf(vis);
-			if(indexOfVis == -1) throw new IllegalArgumentException("This visit was not planned by the agency !");
+
+		int indexOfVis = this.listVisits.indexOf(vis);
+		if(indexOfVis == -1) throw new IllegalArgumentException("This visit was not planned by the agency !");
 
 
-			this.listVisits.get(indexOfVis).getClient().putPropertyOnSale(prop, availabilityDate, desiredSaleDate, desiredPrice);
-			this.listVisits.get(indexOfVis).setHasHappened(true);
-		}catch (Exception e) {
-			throw new IllegalArgumentException("This client is registered as buyer and therefore cannot sign sales mandates.");
-		}
+		this.listVisits.get(indexOfVis).getClient().putPropertyOnSale(prop, availabilityDate, desiredSaleDate, desiredPrice);
+		this.listVisits.get(indexOfVis).setHasHappened(true);
+		
 	}
 	
 	public void signSalesAgreement(Person buyer, Property propertyToBeBought, Date saleDate, float sellingFees, float priceToPayTotal) throws IllegalArgumentException{
@@ -109,6 +107,12 @@ public class RealEstateAgency implements Observer{
 	@Override
 	public void update(Observable o, Object arg) {
 		this.propertiesSimilarToWishes = this.lookForWishesAvailable();
+		for(Person p : this.listClients)
+			this.listClients.get(this.listClients.indexOf(p)).setPropertySimilirarToWishAvailable(false);
+		
+		for(Person p : this.propertiesSimilarToWishes.keySet())
+			this.listClients.get(this.listClients.indexOf(p)).setPropertySimilirarToWishAvailable(true);
+		
 	}
 	
 	public void presentWishToBuyer(Person buyer, SalesMandate sMOfPropertyOnSale,Date dateOfVisit){
@@ -127,13 +131,24 @@ public class RealEstateAgency implements Observer{
 				for(Person personWithPropertiesOnSale : this.listClients){
 					for(SalesMandate sMOfPropertyOnSale : personWithPropertiesOnSale.getListSalesMandate()){
 						if(wish.compareToProperty(sMOfPropertyOnSale)){
-							personWithWishes.setPropertySimilirarToWishAvailable(true);
 							propertiesSimilarToWishes.put(personWithWishes, sMOfPropertyOnSale);
 						}
 					}
 				}
 			}
 		}
+		return propertiesSimilarToWishes;
+	}
+
+	public List<Person> getListClients() {
+		return listClients;
+	}
+
+	public List<Visit> getListVisits() {
+		return listVisits;
+	}
+
+	public HashMap<Person, SalesMandate> getPropertiesSimilarToWishes() {
 		return propertiesSimilarToWishes;
 	}
 	

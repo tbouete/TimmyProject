@@ -1,6 +1,5 @@
 package agency;
 
-import property.Property;
 import property.PropertyTypes;
 
 public class Wish {
@@ -22,6 +21,26 @@ public class Wish {
 	
 	
 	
+	@Override
+	public String toString() {
+		String ret = "";
+		
+		ret += "Wish : a " + this.typeOfProperty.toString() + " ";
+		ret += "in " + this.localisation + " ";
+		
+		if(this.typeOfProperty.equals(PropertyTypes.Flat) || this.typeOfProperty.equals(PropertyTypes.House))
+			ret += " composed of " + this.numberRooms + " rooms ";
+		
+		if(this.typeOfProperty.equals(PropertyTypes.Plot) || this.typeOfProperty.equals(PropertyTypes.House))
+			ret += "with a floor area of " + this.floorArea + " m² ";
+		
+		ret += "at the price of " + this.desiredPriceWished + "€.";
+		
+		return ret;
+	}
+
+
+
 	@Override
 	public boolean equals(Object obj) {
 		Wish tmp;
@@ -46,12 +65,13 @@ public class Wish {
 		boolean ret = false;
 		
 		ret = Boolean.logicalAnd(ret, sM.getDesiredPrice() <= this.desiredPriceWished * 1.1); //The price of the property should be at max 110% of the requested value
-		ret = Boolean.logicalAnd(ret, sM.getProperty().getAreaProperty() >= this.floorArea * 0.9); //The area of the property should be at least 90% of the requested value
 		ret = Boolean.logicalAnd(ret, sM.getProperty().getAddress().equals(this.getLocalisation()));
 		ret = Boolean.logicalAnd(ret, sM.getProperty().getClass().getName().equals(this.typeOfProperty.toString()));
-		if(this.typeOfProperty.equals(PropertyTypes.Flat) || this.typeOfProperty.equals(PropertyTypes.House)){
+		
+		if(this.typeOfProperty.equals(PropertyTypes.Plot) || this.typeOfProperty.equals(PropertyTypes.House))
+			ret = Boolean.logicalAnd(ret, sM.getProperty().getAreaProperty() >= this.floorArea * 0.9); //The ground area of the property should be at least 90% of the requested value
+		if(this.typeOfProperty.equals(PropertyTypes.Flat) || this.typeOfProperty.equals(PropertyTypes.House))
 			ret = Boolean.logicalAnd(ret, sM.getProperty().getNumberOfRooms() >= this.numberRooms);
-		}
 				
 		return ret;
 	}
