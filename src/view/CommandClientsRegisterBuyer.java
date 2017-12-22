@@ -1,5 +1,7 @@
 package view;
 
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -81,6 +83,7 @@ public class CommandClientsRegisterBuyer implements Command{
 		catch(NoSuchElementException e){
 			e.printStackTrace();
 		}
+		
 		
 		Person buyer = new Person(address, email, name, phoneNumber, addressNotary);
 		
