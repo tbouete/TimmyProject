@@ -7,7 +7,7 @@ import java.util.Scanner;
 import agency.RealEstateAgency;
 import person.Person;
 
-public class CommandClients implements Command{
+public class CommandClients implements Command, CommandMenu{
 
 	private RealEstateAgency REA;
 	private boolean quit;
@@ -54,13 +54,13 @@ public class CommandClients implements Command{
 			this.quit = true;
 			break;
 		case 1:
-			System.out.println("To be implemented...");
-			//TODO
+			c = new CommandClientsRegisterBuyer(this.REA);
+			c.execute();
 			break;
 
 		case 2:
-			System.out.println("To be implemented...");
-			//TODO
+			c = new CommandClientsRegisterSeller(this.REA);
+			c.execute();
 			break;
 
 		case 3:
@@ -69,6 +69,11 @@ public class CommandClients implements Command{
 			break;
 
 		case 4:
+			System.out.println("To be implemented...");
+			//TODO
+			break;
+			
+		case 5:
 			System.out.println("To be implemented...");
 			//TODO
 			break;
@@ -91,6 +96,7 @@ public class CommandClients implements Command{
 		System.out.println("2 - Register new seller");
 		System.out.println("3 - Sign a sale mandate");
 		System.out.println("4 - Sign a sale agreement");
+		System.out.println("5 - Add a buying wish to a client");
 		System.out.println();
 
 		System.out.print("Please select your operation : ");

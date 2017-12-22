@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import agency.RealEstateAgency;
 
-public class BaseView {
+public class BaseView implements CommandMenu{
 
 	private RealEstateAgency REA;
 	private boolean quit;
@@ -22,7 +22,8 @@ public class BaseView {
 			this.selectOperation();
 		}
 	}
-
+	
+	@Override
 	public void displayAvailableOperations(){
 		System.out.println();
 		System.out.println("---Main menu---");
@@ -38,7 +39,8 @@ public class BaseView {
 
 		System.out.print("Please select your operation : ");
 	}
-
+	
+	@Override
 	public void selectOperation(){
 		Scanner sc = new Scanner(System.in);
 		int usersChoice = -1;
