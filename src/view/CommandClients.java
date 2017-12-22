@@ -79,7 +79,7 @@ public class CommandClients implements Command, CommandMenu{
 			break;
 
 		default:
-			System.out.println("You can only select on of the available operations ! " + "\n");
+			System.out.println("You can only select one of the available operations ! " + "\n");
 			break;
 		}
 		
