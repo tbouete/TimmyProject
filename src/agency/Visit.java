@@ -27,6 +27,22 @@ public class Visit {
 	
 	
 	@Override
+	public String toString() {
+		String ret = "";
+		
+		ret += "**Visit**" + "\n";
+		
+		if(this.hasHappened) ret += "This visit had yet to happen." + "\n";
+		else ret+= "This visit already happened."  + "\n";
+		
+		ret += "Date of the visit : " + this.dateOfVisit + "\n";
+		ret += "Subject of the visit : " + this.description + "\n";
+		
+		ret += "\n";
+		return ret;
+	}
+
+	@Override
 	public boolean equals(Object obj) {
 		Visit tmp;
 		

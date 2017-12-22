@@ -52,7 +52,7 @@ public class RealEstateAgency implements Observer{
 			this.listClients.add(buyer);
 		}
 		
-		//Si le client est déjà enregistrer, parcourir la liste des clients existants et ajoutez les voeux au bon client.
+		//If the client is already registered,parse the existing clients list and the wishes to the right one.
 		else for(Person client : this.listClients) if(client.equals(buyer)) for(Wish w : wishes) buyer.addWish(w);
 		
 	}
@@ -103,17 +103,6 @@ public class RealEstateAgency implements Observer{
 		
 		
 	}
-
-	@Override
-	public void update(Observable o, Object arg) {
-		this.propertiesSimilarToWishes = this.lookForWishesAvailable();
-		for(Person p : this.listClients)
-			this.listClients.get(this.listClients.indexOf(p)).setPropertySimilirarToWishAvailable(false);
-		
-		for(Person p : this.propertiesSimilarToWishes.keySet())
-			this.listClients.get(this.listClients.indexOf(p)).setPropertySimilirarToWishAvailable(true);
-		
-	}
 	
 	public void presentWishToBuyer(Person buyer, SalesMandate sMOfPropertyOnSale,Date dateOfVisit){
 		String visDesc = new String("Visit of " + sMOfPropertyOnSale.getProperty().getAddress() +
@@ -125,6 +114,17 @@ public class RealEstateAgency implements Observer{
 		this.listVisits.add(vis);
 	}
 	
+	@Override
+	public void update(Observable o, Object arg) {
+		this.propertiesSimilarToWishes = this.lookForWishesAvailable();
+		for(Person p : this.listClients)
+			this.listClients.get(this.listClients.indexOf(p)).setPropertySimilirarToWishAvailable(false);
+		
+		for(Person p : this.propertiesSimilarToWishes.keySet())
+			this.listClients.get(this.listClients.indexOf(p)).setPropertySimilirarToWishAvailable(true);
+		
+	}
+
 	private HashMap<Person, SalesMandate> lookForWishesAvailable(){
 		HashMap<Person, SalesMandate> propertiesSimilarToWishes= new HashMap<>();
 		for(Person personWithWishes : this.listClients){

@@ -12,6 +12,7 @@ import property.Flat;
 import property.Orientation;
 import property.Property;
 import property.PropertyTypes;
+import view.BaseView;
 
 
 public class Main 
@@ -20,12 +21,17 @@ public class Main
 	public static void main(String[] args) 
 	{
 		
+		Person spongeBobSeller = new Person("Bikini Bottom One","spongeBobi@lovekrustypate.com", "SpongeBob","+330631224568","Pacific Ocean");
+		Person starfishPatrickBuyer = new Person("Bikini Bottom Two","starfishTrickPa@lovekrustypate.com", "Patrick Wonderful Starfish","+330604468764", "Pacific Ocean");
 		
+		BaseView BV = new BaseView();
+		BV.getREA().getListClients().add(spongeBobSeller);
+		BV.getREA().getListClients().add(starfishPatrickBuyer);
+		BV.launchView();
 		
-		
+		/*
 		 RealEstateAgency krustyKrabAgency = new RealEstateAgency();
-		 Person spongeBobSeller = new Person("Bikini Bottom One","spongeBobi@lovekrustypate.com", "SpongeBob","+330631224568","Pacific Ocean");
-		 Person starfishPatrickBuyer = new Person("Bikini Bottom Two","starfishTrickPa@lovekrustypate.com", "Patrick Wonderful Starfish","+330604468764", "Pacific Ocean");
+		 
 		 Property ananas = new Flat("PloufCity", Orientation.NORTH, 50, 5, 6, 1500);
 		 
 		 krustyKrabAgency.registerSeller(spongeBobSeller,new Date());
@@ -40,7 +46,7 @@ public class Main
 		 
 		 System.out.println(spongeBobSeller);
 		 System.out.println(starfishPatrickBuyer);
-		 
+		 */
 		 
 		 
 		 
@@ -49,13 +55,6 @@ public class Main
 		 
 		 
 		// signSaleMandate(Visit vis, Property prop, Date availabilityDate, Date desiredSaleDate, float desiredPrice)
-		
-		
-		
-		
-		
-		System.out.println("Done");
-		
 
 	}
 
