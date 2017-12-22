@@ -69,14 +69,15 @@ public class BaseView implements CommandMenu{
 			break;
 
 		case 2:
-			System.out.println("To be implemented...");
-			//TODO
+			c = new CommandNotaries(this.REA);
+			c.execute();
 			break;
 
 		case 3:
-			System.out.println("To be implemented...");
-			//TODO
+			c = new CommandVisits(this.REA);
+			c.execute();
 			break;
+			
 
 		case 4:
 			System.out.println("To be implemented...");
